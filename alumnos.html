@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Alumnos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #35fed6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px;
+      margin: 0;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    form {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .botones {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    button, .volver {
+      flex: 1;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    button:hover, .volver:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulario de Registro de Alumnos</h2>
+  <center><img src="CECY.png"></center>
+  
+  <form action="registrar_alumnos.php" method="post">
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="control">Número de Control:</label>
+    <input type="text" id="control" name="control" required>
+
+    <label for="grupo">Grupo:</label>
+    <input type="text" id="grupo" name="grupo" required>
+
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="asunto" required>
+
+    <label for="motivo">Motivo:</label>
+    <select id="motivo" name="motivo" required>
+      <option value="">Seleccione</option>
+      <option value="Servicio Social">Servicio Social</option>
+      <option value="Externo">Externo</option>
+      <option value="Tramites">Trámites</option>
+    </select>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <label for="entrada">Hora de Entrada:</label>
+    <input type="time" id="entrada" name="entrada" required>
+
+    <label for="salida">Hora de Salida:</label>
+    <input type="time" id="salida" name="salida" required>
+
+    <div class="buttons">
+      <button type="submit">Registrar</button>
+      <button type="reset">Borrar</button>
+      <a href="inicioJC.html" class="volver">Inicio</a>
+    </div>
+  </form>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página de Inicio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #03bd5d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(2, 150px);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .menu a {
+      text-align: center;
+      padding: 15px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Gestion de Accesos</h1>
+  <img src="CECY.png">
+  <p>Selecciona una opción para continuar:</p>
+
+  <div class="menu">
+    <a href="tutores.html">Tutores</a>
+    <a href="visitantes.html">Visitantes</a>
+    <a href="alumnos.html">Alumnos</a>
+    <a href="horarios.html">Horario de profesores</a>
+  </div>
+
+</body>
+</html>
